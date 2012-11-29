@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B156E07165B652500DBFE14 /* ETubeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B156E06165B652500DBFE14 /* ETubeSearchViewController.m */; };
+		5B156E0F165B696E00DBFE14 /* ETubeCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B156E0E165B696E00DBFE14 /* ETubeCustomCell.m */; };
+		5B156E16165B6D2500DBFE14 /* VideoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B156E15165B6D2500DBFE14 /* VideoClass.m */; };
+		5B156E19165B6DDA00DBFE14 /* VideoDBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B156E18165B6DDA00DBFE14 /* VideoDBClass.m */; };
+		5B156E1B165B6E0700DBFE14 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B156E1A165B6E0700DBFE14 /* MediaPlayer.framework */; };
 		5B2557DE165A42CE00F6D8F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2557DD165A42CE00F6D8F3 /* UIKit.framework */; };
 		5B2557E0165A42CE00F6D8F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2557DF165A42CE00F6D8F3 /* Foundation.framework */; };
 		5B2557E2165A42CE00F6D8F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2557E1165A42CE00F6D8F3 /* CoreGraphics.framework */; };
@@ -18,7 +23,6 @@
 		5B2557F4165A42CE00F6D8F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2557F3165A42CE00F6D8F3 /* Default-568h@2x.png */; };
 		5B2557F7165A42CF00F6D8F3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2557F5165A42CF00F6D8F3 /* MainStoryboard_iPhone.storyboard */; };
 		5B2557FA165A42CF00F6D8F3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2557F8165A42CF00F6D8F3 /* MainStoryboard_iPad.storyboard */; };
-		5B2557FD165A42CF00F6D8F3 /* ETubeFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2557FC165A42CF00F6D8F3 /* ETubeFirstViewController.m */; };
 		5B2557FF165A42CF00F6D8F3 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2557FE165A42CF00F6D8F3 /* first.png */; };
 		5B255801165A42CF00F6D8F3 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B255800165A42CF00F6D8F3 /* first@2x.png */; };
 		5B255804165A42CF00F6D8F3 /* ETubeSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B255803165A42CF00F6D8F3 /* ETubeSecondViewController.m */; };
@@ -27,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B156E05165B652500DBFE14 /* ETubeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETubeSearchViewController.h; sourceTree = "<group>"; };
+		5B156E06165B652500DBFE14 /* ETubeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETubeSearchViewController.m; sourceTree = "<group>"; };
+		5B156E0D165B696E00DBFE14 /* ETubeCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETubeCustomCell.h; sourceTree = "<group>"; };
+		5B156E0E165B696E00DBFE14 /* ETubeCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETubeCustomCell.m; sourceTree = "<group>"; };
+		5B156E14165B6D2500DBFE14 /* VideoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoClass.h; sourceTree = "<group>"; };
+		5B156E15165B6D2500DBFE14 /* VideoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoClass.m; sourceTree = "<group>"; };
+		5B156E17165B6DDA00DBFE14 /* VideoDBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDBClass.h; sourceTree = "<group>"; };
+		5B156E18165B6DDA00DBFE14 /* VideoDBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDBClass.m; sourceTree = "<group>"; };
+		5B156E1A165B6E0700DBFE14 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5B2557D9165A42CE00F6D8F3 /* EasyTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2557DD165A42CE00F6D8F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5B2557DF165A42CE00F6D8F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,8 +55,6 @@
 		5B2557F3165A42CE00F6D8F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B2557F6165A42CF00F6D8F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		5B2557F9165A42CF00F6D8F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		5B2557FB165A42CF00F6D8F3 /* ETubeFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETubeFirstViewController.h; sourceTree = "<group>"; };
-		5B2557FC165A42CF00F6D8F3 /* ETubeFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETubeFirstViewController.m; sourceTree = "<group>"; };
 		5B2557FE165A42CF00F6D8F3 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		5B255800165A42CF00F6D8F3 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		5B255802165A42CF00F6D8F3 /* ETubeSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETubeSecondViewController.h; sourceTree = "<group>"; };
@@ -57,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B156E1B165B6E0700DBFE14 /* MediaPlayer.framework in Frameworks */,
 				5B2557DE165A42CE00F6D8F3 /* UIKit.framework in Frameworks */,
 				5B2557E0165A42CE00F6D8F3 /* Foundation.framework in Frameworks */,
 				5B2557E2165A42CE00F6D8F3 /* CoreGraphics.framework in Frameworks */,
@@ -66,6 +78,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B156DFE165B639700DBFE14 /* EasyTubeDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5B2557EC165A42CE00F6D8F3 /* ETubeAppDelegate.h */,
+				5B2557ED165A42CE00F6D8F3 /* ETubeAppDelegate.m */,
+			);
+			name = EasyTubeDelegate;
+			sourceTree = "<group>";
+		};
+		5B156E00165B63A800DBFE14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5B2557F5165A42CF00F6D8F3 /* MainStoryboard_iPhone.storyboard */,
+				5B2557F8165A42CF00F6D8F3 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5B156E01165B63B800DBFE14 /* ETFirstController */ = {
+			isa = PBXGroup;
+			children = (
+				5B156E0C165B695000DBFE14 /* CustomCell */,
+				5B156E05165B652500DBFE14 /* ETubeSearchViewController.h */,
+				5B156E06165B652500DBFE14 /* ETubeSearchViewController.m */,
+			);
+			name = ETFirstController;
+			sourceTree = "<group>";
+		};
+		5B156E02165B63C500DBFE14 /* ETSecondController */ = {
+			isa = PBXGroup;
+			children = (
+				5B255802165A42CF00F6D8F3 /* ETubeSecondViewController.h */,
+				5B255803165A42CF00F6D8F3 /* ETubeSecondViewController.m */,
+			);
+			name = ETSecondController;
+			sourceTree = "<group>";
+		};
+		5B156E03165B63E200DBFE14 /* IMG320x480 */ = {
+			isa = PBXGroup;
+			children = (
+				5B2557FE165A42CF00F6D8F3 /* first.png */,
+				5B255805165A42CF00F6D8F3 /* second.png */,
+			);
+			name = IMG320x480;
+			sourceTree = "<group>";
+		};
+		5B156E04165B63F100DBFE14 /* IMG@2x */ = {
+			isa = PBXGroup;
+			children = (
+				5B255800165A42CF00F6D8F3 /* first@2x.png */,
+				5B255807165A42CF00F6D8F3 /* second@2x.png */,
+			);
+			name = "IMG@2x";
+			sourceTree = "<group>";
+		};
+		5B156E0C165B695000DBFE14 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5B156E0D165B696E00DBFE14 /* ETubeCustomCell.h */,
+				5B156E0E165B696E00DBFE14 /* ETubeCustomCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		5B156E10165B6C2500DBFE14 /* VideoClass */ = {
+			isa = PBXGroup;
+			children = (
+				5B156E17165B6DDA00DBFE14 /* VideoDBClass.h */,
+				5B156E18165B6DDA00DBFE14 /* VideoDBClass.m */,
+				5B156E14165B6D2500DBFE14 /* VideoClass.h */,
+				5B156E15165B6D2500DBFE14 /* VideoClass.m */,
+			);
+			name = VideoClass;
+			sourceTree = "<group>";
+		};
 		5B2557CE165A42CE00F6D8F3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +173,7 @@
 		5B2557DC165A42CE00F6D8F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B156E1A165B6E0700DBFE14 /* MediaPlayer.framework */,
 				5B2557DD165A42CE00F6D8F3 /* UIKit.framework */,
 				5B2557DF165A42CE00F6D8F3 /* Foundation.framework */,
 				5B2557E1165A42CE00F6D8F3 /* CoreGraphics.framework */,
@@ -96,18 +184,13 @@
 		5B2557E3165A42CE00F6D8F3 /* EasyTube */ = {
 			isa = PBXGroup;
 			children = (
-				5B2557EC165A42CE00F6D8F3 /* ETubeAppDelegate.h */,
-				5B2557ED165A42CE00F6D8F3 /* ETubeAppDelegate.m */,
-				5B2557F5165A42CF00F6D8F3 /* MainStoryboard_iPhone.storyboard */,
-				5B2557F8165A42CF00F6D8F3 /* MainStoryboard_iPad.storyboard */,
-				5B2557FB165A42CF00F6D8F3 /* ETubeFirstViewController.h */,
-				5B2557FC165A42CF00F6D8F3 /* ETubeFirstViewController.m */,
-				5B2557FE165A42CF00F6D8F3 /* first.png */,
-				5B255800165A42CF00F6D8F3 /* first@2x.png */,
-				5B255802165A42CF00F6D8F3 /* ETubeSecondViewController.h */,
-				5B255803165A42CF00F6D8F3 /* ETubeSecondViewController.m */,
-				5B255805165A42CF00F6D8F3 /* second.png */,
-				5B255807165A42CF00F6D8F3 /* second@2x.png */,
+				5B156E10165B6C2500DBFE14 /* VideoClass */,
+				5B156DFE165B639700DBFE14 /* EasyTubeDelegate */,
+				5B156E00165B63A800DBFE14 /* Storyboards */,
+				5B156E01165B63B800DBFE14 /* ETFirstController */,
+				5B156E02165B63C500DBFE14 /* ETSecondController */,
+				5B156E04165B63F100DBFE14 /* IMG@2x */,
+				5B156E03165B63E200DBFE14 /* IMG320x480 */,
 				5B2557E4165A42CE00F6D8F3 /* Supporting Files */,
 			);
 			path = EasyTube;
@@ -201,8 +284,11 @@
 			files = (
 				5B2557EA165A42CE00F6D8F3 /* main.m in Sources */,
 				5B2557EE165A42CE00F6D8F3 /* ETubeAppDelegate.m in Sources */,
-				5B2557FD165A42CF00F6D8F3 /* ETubeFirstViewController.m in Sources */,
 				5B255804165A42CF00F6D8F3 /* ETubeSecondViewController.m in Sources */,
+				5B156E07165B652500DBFE14 /* ETubeSearchViewController.m in Sources */,
+				5B156E0F165B696E00DBFE14 /* ETubeCustomCell.m in Sources */,
+				5B156E16165B6D2500DBFE14 /* VideoClass.m in Sources */,
+				5B156E19165B6DDA00DBFE14 /* VideoDBClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +414,7 @@
 				5B25580D165A42CF00F6D8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,10 +9,80 @@
 #import "ETubeAppDelegate.h"
 
 @implementation ETubeAppDelegate
+@synthesize TabBarController;
+@synthesize ApplicationDidFinishLaunching;
+@synthesize NetworkActivityCounter;
+@synthesize TabBarItemDownloadsBadgeValue;
+
+
+#pragma mark Utility methods
+
+- (void)updateNetworkActivity {
+	if (self.ApplicationDidFinishLaunching) {
+		if (self.NetworkActivityCounter == 0) {
+			[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+		} else {
+			[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+		}
+	}
+}
+
+- (void)updateTabBarItemDownloadsBadgeValue {
+	static NSUInteger const TAB_BAR_ITEM_DOWNLOADS = 1;
+    
+	if (self.ApplicationDidFinishLaunching) {
+		UITabBarItem *item = [self.TabBarController.tabBar.items objectAtIndex:TAB_BAR_ITEM_DOWNLOADS];
+        
+		if (item != nil) {
+			item.badgeValue = TabBarItemDownloadsBadgeValue;
+		}
+	}
+}
+
+#pragma mark NSNotification methods
+
+- (void)notificationsHandler:(NSNotification *)notification {
+	if ([[notification name] isEqualToString:@"LoadTubeAppDelegate NetworkActivityStarted"]) {
+		self.NetworkActivityCounter++;
+        
+		[self updateNetworkActivity];
+	} else if ([[notification name] isEqualToString:@"LoadTubeAppDelegate NetworkActivityEnded"]) {
+		self.NetworkActivityCounter--;
+        
+		[self updateNetworkActivity];
+	} else if ([[notification name] isEqualToString:@"LoadTubeAppDelegate SetDownloadsCount"]) {
+		if ([notification object] != nil) {
+			self.TabBarItemDownloadsBadgeValue = [NSString stringWithString:[notification object]];
+		} else {
+			self.TabBarItemDownloadsBadgeValue = nil;
+		}
+        
+		[self updateTabBarItemDownloadsBadgeValue];
+	}
+}
+
+#pragma mark UIApplicationDelegate methods
+
+- (id)init {
+	if((self = [super init])) {
+		ApplicationDidFinishLaunching = NO;
+		NetworkActivityCounter        = 0;
+		TabBarItemDownloadsBadgeValue = nil;
+        
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationsHandler:) name:@"LoadTubeAppDelegate NetworkActivityStarted" object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationsHandler:) name:@"LoadTubeAppDelegate NetworkActivityEnded"   object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationsHandler:) name:@"LoadTubeAppDelegate SetDownloadsCount"      object:nil];
+	}
+	return self;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self updateNetworkActivity];
+	[self updateTabBarItemDownloadsBadgeValue];
+
     return YES;
 }
 							
